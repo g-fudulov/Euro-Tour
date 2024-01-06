@@ -1,0 +1,157 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;  
+}
+
+section.heading {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5vh;
+}
+
+section.heading > h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+/* Destinations */
+section.destination {
+  padding-top: 6px;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-top: 1px solid #d38dff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vh;
+  max-width: 1400px;
+}
+
+div.photos {
+  align-items: center;
+  gap: 3vw;
+}
+
+div.photos img {
+  transition: all 0.4s;
+}
+
+div.photos img:hover {
+  transform: scale(1.1);
+}
+
+div.photos > div.image.wrapper {
+  width: 40vw;
+  aspect-ratio: 4/3;
+  min-width: 300px;
+}
+
+section.destination h2, p {
+  text-align: center;
+}
+
+/* Destinations end */
+
+/* Price Table */
+
+section.table {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  min-height: 45vh;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #d38dff;
+  font-size: 1.3rem;
+}
+
+thead th {
+  color: #d38dff;
+}
+
+tbody >tr > td:nth-child(3) {
+  border-right: 2px solid #d38dff;
+}
+
+tr > th:nth-child(3) {
+  border-right: 2px solid #d38dff;
+}
+
+td, th {
+  padding: 8px 12px;
+}
+
+/* Price Table end */
+
+/* Media Queries */
+
+@media screen and (max-width: 650px) {
+  div.photos {
+    flex-direction: column;
+  }
+
+  #price {
+    width: 30vw;
+  }
+
+  table {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.destination p {
+    font-size: 15px;
+  }
+}
+
+@media screen and  (max-width: 350px) {
+  section.heading > h1 {
+    font-size: 40px;
+  }
+
+  section.heading > h3 {
+    font-size: 16px;
+  }
+
+  div.photos > div.image.wrapper {
+    width: 250px;
+    min-width: unset;
+  }
+
+  section.destination p {
+    font-size: 13px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  table {
+    font-size: 11px;
+  }
+
+  div.photos > div.image.wrapper {
+    width: 220px;
+  }
+
+  section.destination p {
+    font-size: 12px;
+  }
+
+  section.heading > h3 {
+    font-size: 14px;
+  }
+}

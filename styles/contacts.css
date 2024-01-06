@@ -1,0 +1,169 @@
+section.heading {
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5vh;
+}
+
+section.heading > h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+section.heading > h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+section.map {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+section.map > p {
+  font-size: 26px;
+}
+
+section.map > p:nth-child(1) {
+  color: #d4a5f0;
+}
+
+iframe {
+  aspect-ratio: 4/3;
+  width: 90vw;
+  height: calc(90vw * 4/3);
+  max-width: 600px;
+  max-height: 450px;
+}
+
+section.form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3vh;
+  border-top: 2px solid #d4a5f0;
+  padding-top: 3vh;
+}
+
+div.names {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+div.destinations {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.inputs {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7vw;
+}
+
+div.comment {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vh;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #d4a5f0;
+}
+
+div.inputs > label {
+  color: white;
+}
+
+form input[type=text], textarea {
+  background-color: rgb(54 57 69);
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: white;
+  resize: none;
+}
+
+/* Form styles end */
+
+@media screen and (max-width: 650px) {
+  section.heading > h1 {
+    font-size: 40px;
+  }
+  
+  section.heading > h3 {
+    font-size: 18px;
+  }
+
+  section.map > p {
+    font-size: 22px;
+  }
+
+  div.names {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.heading > h1 {
+    font-size: 36px;
+  }
+  
+  section.heading > h3 {
+    font-size: 16px;
+  }
+
+  section.map > p {
+    font-size: 18px;
+  }
+
+  textarea {
+    height: 250px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  section.heading > h1 {
+    font-size: 32px;
+  }
+  
+  section.heading > h3 {
+    font-size: 14px;
+  }
+
+  section.map > p {
+    font-size: 16px;
+  }
+
+  textarea {
+    height: 220px;
+    width: 270px;
+  }
+
+  form input[type=text] {
+    width: 180px;
+  }
+}

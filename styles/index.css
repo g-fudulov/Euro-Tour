@@ -1,0 +1,144 @@
+/* Hero section start */
+section.hero.wrapper{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 10vh;
+  overflow: hidden;
+}
+
+h1.heading {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2.slogan {
+  font-size: 22px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+}
+
+
+section.hero > a:hover {
+  text-shadow: none;
+}
+/* Hero section end */
+
+/* Image Slider */
+
+#slider {
+  margin: auto;
+  height: 55vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(152vw);
+  width: calc(490px * 8);
+  animation: autoscroll 40s linear infinite;
+}
+
+#track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  height: 400px;
+  width: 490px;
+  padding: 32px;
+}
+
+.slide > img {
+  transition: transform 0.5s;
+}
+
+.slide > img:hover {
+  transform: scale(1.25);
+}
+
+@keyframes autoscroll {
+  0% {
+    transform: translateX(152vw);
+  }
+
+  100% {
+    transform: translateX(-152vw);
+  }
+}
+
+/* Image Slider end */
+
+/* description */
+
+section.description {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+div.desc {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12vh;
+  max-width: 50vw;
+  text-align: center;
+}
+
+div.desc h3 {
+  font-size: 30px;
+}
+
+div.desc p {
+  font-size: 18px;
+}
+
+/* description end */
+
+/* Media queries */
+
+@media screen and (max-width: 900px) {
+  h1.heading {
+    font-size: 38px;
+  }
+  
+  h2.slogan {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.desc {
+    max-width: 80vw;
+  }
+
+  div.desc h3 {
+    font-size: 26px;
+  }
+
+  div.desc p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1.heading {
+    font-size: 32px;
+  }
+  
+  h2.slogan {
+    font-size: 15px;
+  }
+}
+

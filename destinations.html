@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дестинации</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font end -->
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/destinations.css" />
+    <script src="javascript/scroll.js" defer></script>
+    <script src="javascript/mobileMenu.js" defer></script>
+  </head>
+  <body>
+    <header class="wrapper">
+      <nav id="mobile">
+        <ul role="list" class="wrapper">
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="destinations.html">Дестинации</a></li>
+        </ul>
+      </nav>
+      <a href="index.html">
+        <div class="logo image wrapper">
+          <img src="images/logo3.png" alt="Logo" draggable="false" />
+        </div>
+      </a>
+      <nav class="desktop">
+        <ul role="list" class="wrapper">
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="destinations.html">Дестинации</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-icon" class="image wrapper">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          focusable="false"
+          style="
+            pointer-events: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+          "
+        >
+          <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <section class="heading wrapper">
+        <h1>Дестинации</h1>
+        <h3 class="hidden">Преоткрийте красотата на Европа!</h3>
+        <a class="btn-wrapper" href="#price"
+          ><button class="btn">Виж Цени</button></a
+        >
+      </section>
+      <section class="destination wrapper">
+        <h2>Мадрид</h2>
+        <div class="photos wrapper hidden">
+          <div class="image wrapper">
+            <img src="images/madird.jpg" alt="madird1" draggable="false" />
+          </div>
+          <div class="image wrapper">
+            <img src="images/madrid2.jpg" alt="madrid2" draggable="false" />
+          </div>
+        </div>
+        <p>
+          Добре дошли в животът на Испания – Мадрид, градът, където страстта
+          тече из улиците и всяко кътче разказва история. Поглъщайте се в живата
+          атмосфера на Пласа Майор, където историята оживява зад впечатляващата
+          архитектура. Разхождайте се из известния Прадо музей, дом на шедьоври
+          от Гойя и Веласкес, и усещайте пулса на живота в животния художествен
+          сценарий на Мадрид.
+        </p>
+        <a href="madrid.html"><button class="btn">Детайли</button></a>
+      </section>
+      <section class="destination wrapper">
+        <h2>Лондон</h2>
+        <div class="photos wrapper hidden">
+          <div class="image wrapper">
+            <img src="images/london.jpg" alt="madird1" draggable="false" />
+          </div>
+          <div class="image wrapper">
+            <img src="images/london2.jpg" alt="madrid2" draggable="false" />
+          </div>
+        </div>
+        <p>
+          Добре дошли в сърцето на британската изтънченост и историческо величие
+          – Лондон, град, където традицията среща модерността в безпроблемен
+          танц. Докато изследвате емблематичните забележителности като
+          величествения Биг Бен, историческата Лондонска кула и
+          световноизвестния Британски музей, ще се окажете потопени в векове на
+          завладяваща история.
+        </p>
+        <a href="london.html"><button class="btn">Детайли</button></a>
+      </section>
+      <section class="destination wrapper">
+        <h2>Париж</h2>
+        <div class="photos wrapper hidden">
+          <div class="image wrapper">
+            <img src="images/paris.jpg" alt="madird1" draggable="false" />
+          </div>
+          <div class="image wrapper">
+            <img src="images/paris2.jpg" alt="madrid2" draggable="false" />
+          </div>
+        </div>
+        <p>
+          Добре дошли във вълшебния свят на Париж, градът на светлините и
+          изяществото, където романтиката среща културата. Потопете се в
+          емблематичната атмосфера на Ефеловата кула, която ви връхлита със
+          своята величественост. Разгледайте световноизвестния Лувъра, дом на
+          безброй произведения на изкуството, включително Мона Лиза.
+        </p>
+        <a href="paris.html"><button class="btn">Детайли</button></a>
+      </section>
+      <section id="price" class="table wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Мадрид</th>
+              <th>Лондон</th>
+              <th>Париж</th>
+              <th>Дни</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>330 лв</td>
+              <td>380 лв</td>
+              <td>310 лв</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>500 лв</td>
+              <td>510 лв</td>
+              <td>500 лв</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>730 лв</td>
+              <td>780 лв</td>
+              <td>690 лв</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="contacts.html"
+          ><button class="btn btn-primary">Свържи Се</button></a
+        >
+      </section>
+    </main>
+    <footer>
+      <a href="index.html">Начало</a>
+      <a href="contacts.html">Контакти</a>
+      <a href="destinations.html">Дестинации</a>
+      <p>Телефон: <a href="tel:+359880000209">+359 88 0000 209</a></p>
+      <p>
+        Имейл: <a href="mailto:example@somemail.com">example@somemail.com</a>
+      </p>
+      <p id="copy">Copyright&copy;. Всички Права Запазаени.</p>
+    </footer>
+  </body>
+</html>
